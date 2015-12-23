@@ -92,6 +92,19 @@ a{
     margin-top: 5em;
 }
 
+.seperatorgap::before {
+    content: '';
+    display: block;
+    width: 10%;
+    margin-left: 45%;
+    border: 1px solid black;
+    margin-bottom: 100px;
+}
+
+.seperatorgap {
+    margin-top: 100px;
+}
+
 p{
     text-align: justify
 }
@@ -562,7 +575,7 @@ figure.effect-kira:hover figcaption::before {
 /*testimonials */
 
 .testimonials {
-    height: 200px;
+    height: 250px;
     text-align: justify;
 }
 
@@ -576,24 +589,4 @@ figure.effect-kira:hover figcaption::before {
 
 .nav li a {
     font-size: medium;
-}
-
-/* Double Line */
-
-*,
-*:after,
-*::before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-.ss-style-doubleline::before {
-    bottom: 30px;
-    width: 140px;
-    height: 2px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    background: #2072a7;
-    box-shadow: 0 30px 0 #2072a7;
 }
